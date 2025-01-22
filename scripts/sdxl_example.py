@@ -1,3 +1,4 @@
+# CUDA_VISIBLE_DEVICES=0,1 torchrun --standalone --nnodes=1 --nproc_per_node=2 scripts/sdxl_example.py
 import torch
 
 from pipefuser.pipelines import DistriSDXLPipeline

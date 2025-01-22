@@ -1,3 +1,4 @@
+# python setup.py install
 from setuptools import find_packages, setup
 import os
 
@@ -14,13 +15,15 @@ if __name__ == "__main__":
         author_email="fangjiarui123@gmail.com",
         packages=find_packages(),
         install_requires=[
-            "torch>=2.2",
+            # "torch>=2.2",
             "diffusers==0.30.0",
             "transformers",
+            "distvae",
+            "yunchang>=0.6.0",
+
             "sentencepiece",
             "accelerate",
             "beautifulsoup4",
-            "distvae",
             "ftfy",
         ],
         url="https://github.com/xdit-project/xDiT.",
